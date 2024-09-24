@@ -13,8 +13,11 @@ button.addEventListener('click', (event) => {
 })
 
 const buttonFocus = document.querySelector('.focus')
-buttonFocus.addEventListener('focus', () => {
-  if (button.click) {
-    console.log(buttonFocus.value)
-  }
+buttonFocus.addEventListener('focus', (event2) => {
+  console.log(event2.target.value)
+})
+
+const buttonInput = document.querySelector('.value')
+buttonInput.addEventListener('input', (event3) => {
+  console.log(event3.target.value)
 })
